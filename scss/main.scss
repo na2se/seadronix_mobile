@@ -37,3 +37,211 @@
     }
   }
 }
+.visual__txt {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  z-index: 2;
+  padding: 0 20px;
+  word-break: keep-all;
+  transform: translateY(-50%);
+  // 글자단위로 줄바꿈을 하지않음
+  h3 {
+    font-size: clamp(24px, 7.5vw, 48px);
+    font-weight: 700;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  br {
+    display: none;
+  }
+  .char {
+    opacity: 0;
+    transform: translateX(50px);
+    // animation: showTxt 1s ease 0s 1 forwards;
+  }
+  //   .char:nth-child(1) {
+  //     animation-delay: 0.1s;
+  //   }
+  //   .char:nth-child(2) {
+  //     animation-delay: 0.2s;
+  //   }
+  //   .char:nth-child(3) {
+  //     animation-delay: 0.3s;
+  //   }
+  // }
+}
+
+.section {
+  padding: 50px 20px;
+  h2 {
+    font-size: clamp(20px, 5vw, 36px);
+    word-break: keep-all;
+    line-height: 1.25;
+    strong {
+      font-weight: 700;
+    }
+  }
+  .btn {
+    display: inline-flex;
+    padding: 15px 20px;
+    border: 1px solid $blue;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $blue;
+    &--white {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+}
+p {
+  font-size: 14px;
+}
+br {
+  display: none;
+}
+
+.about {
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.products {
+  &-banner {
+    a {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      display: block;
+      margin-top: 30px;
+      img {
+        width: 100%;
+        aspect-ratio: 2/1;
+      }
+      .more {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: #fff;
+      }
+    }
+    &__title {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: #fff;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.banner {
+  color: #fff;
+  background: rgb(4, 63, 189);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 63, 189, 1) 0%,
+    rgba(0, 31, 97, 1) 100%
+  );
+}
+
+.tech {
+  &-banner {
+    margin-top: 30px;
+    a {
+      display: block;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        aspect-ratio: 3/2;
+      }
+      .more {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: #fff;
+        font-size: 36px;
+      }
+    }
+    &__title {
+      position: absolute;
+      right: 20px;
+      left: 20px;
+      word-break: keep-all;
+      top: 20px;
+      color: #fff;
+      // width: 100%;
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.inv {
+  background-image: url("../images/main/main-investors.jpg");
+  color: #fff;
+  &__list {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    li {
+      width: calc(50% - 20px);
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.news {
+  li {
+    width: 80%;
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .sticker {
+      padding: 5px 10px;
+      background-color: $red;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 14px;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+  }
+  .btn {
+    display: none;
+  }
+  &__txt {
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+  }
+}

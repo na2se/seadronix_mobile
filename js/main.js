@@ -38,3 +38,21 @@ new Swiper(".visual__list", {
     type: "bullets",
   },
 });
+
+/**
+ visual__txt 움직이기
+ */
+gsap.to(".visual__txt .char", {
+  x: 0,
+  opacity: 1,
+  duration: 1,
+  ease: "power4",
+  stagger: 0.05,
+});
+
+new Swiper(".news-banner", {
+  slidesperView: "auto",
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+});

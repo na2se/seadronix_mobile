@@ -138,4 +138,43 @@ body {
       }
     }
   }
+  .language {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    font-weight: 700;
+    transform: translateY(-50%);
+    .active {
+      color: $blue;
+    }
+  }
+}
+
+.footer {
+  background-color: darken($blue, 40);
+  color: #fff;
+  padding: 20px;
+  &-logo {
+    height: 40px;
+  }
+  &__item {
+    margin-top: 30px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    dl {
+      display: flex;
+      margin-top: 10px;
+      dt {
+        width: 70px;
+      }
+    }
+  }
+  &-copyright {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+.btn-top {
+  display: none;
 }

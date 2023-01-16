@@ -122,3 +122,43 @@ body {
   border-radius: 100%;
   margin: 0 10px 0 20px;
 }
+.header .language {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+.header .language .active {
+  color: #1580ff;
+}
+
+.footer {
+  background-color: #002148;
+  color: #fff;
+  padding: 20px;
+}
+.footer-logo {
+  height: 40px;
+}
+.footer__item {
+  margin-top: 30px;
+}
+.footer__item h2 {
+  margin-bottom: 20px;
+}
+.footer__item dl {
+  display: flex;
+  margin-top: 10px;
+}
+.footer__item dl dt {
+  width: 70px;
+}
+.footer-copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn-top {
+  display: none;
+}
